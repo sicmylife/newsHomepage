@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+.container header .navbar ul li {
+  display: inline-table;
+}
+.container header .navbar ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  margin-left: 2rem;
+}
+.container header .navbar ul li a:hover {
+  color: hsl(5deg, 85%, 63%);
+}
+.container .first .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.7fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px 20px;
+  grid-template-areas: "grid-img grid-img grid-new" "title grid-btn    grid-new";
+}
+.container .first .grid-img {
+  grid-area: grid-img;
+  height: 344px;
+  background-image: url("./assets/images/image-web-3-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container .first .grid-img img {
+  width: 100%;
+  height: 344px;
+}
+.container .first .grid-new {
+  grid-area: grid-new;
+  height: 600px;
+  padding: 2rem 1rem;
+  background-color: hsl(240deg, 100%, 5%);
+  color: hsl(36deg, 100%, 99%);
+}
+.container .first .grid-new h2 {
+  color: hsl(35deg, 77%, 62%);
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 1rem;
+}
+.container .first .grid-new .div {
+  padding-top: 2rem;
+  font-weight: 800;
+  border-bottom: 1px solid hsl(236deg, 13%, 42%);
+}
+.container .first .grid-new .div h3 {
+  padding-bottom: 1rem;
+  font-size: 1.4rem;
+}
+.container .first .grid-new .div h3 a {
+  color: hsl(36deg, 100%, 99%);
+}
+.container .first .grid-new .div h3 a:hover {
+  color: hsl(35deg, 77%, 62%);
+}
+.container .first .grid-new .div p {
+  color: hsl(236deg, 13%, 42%);
+  padding-bottom: 2rem;
+  line-height: 1.5rem;
+}
+.container .first .grid-new .div:last-child {
+  border-bottom: none;
+}
+.container .first .title {
+  grid-area: title;
+  color: hsl(240deg, 100%, 5%);
+  font-size: 3rem;
+  width: 450px;
+}
+.container .first .grid-btn {
+  grid-area: grid-btn;
+  color: hsl(236deg, 13%, 42%);
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.container .first .grid-btn .read {
+  background-color: hsl(240deg, 100%, 5%);
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.4rem;
+}
+.container .first .grid-btn .read a {
+  color: hsl(36deg, 100%, 99%);
+}
+.container .second {
+  display: flex;
+  padding-bottom: 5rem;
+}
+.container .second .one {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.container .second .one img {
+  height: 200px;
+}
+.container .second .one .text {
+  display: flex;
+  flex-direction: column;
+}
+.container .second .one .text span {
+  font-size: 2rem;
+  color: hsl(233deg, 8%, 79%);
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.container .second .one .text h3 {
+  font-weight: 800;
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+}
+.container .second .one .text a {
+  color: hsl(240deg, 100%, 5%);
+}
+.container .second .one .text a:hover {
+  color: hsl(5deg, 85%, 63%);
+}
+.container .second .one .text p {
+  color: hsl(236deg, 13%, 42%);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 230px;
+}
+
+@media (max-width: 560px) {
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+  }
+  .container header .navbar ul li {
+    display: inline-table;
+  }
+  .container header .navbar ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 2rem;
+  }
+  .container header .navbar ul li a:hover {
+    color: hsl(5deg, 85%, 63%);
+  }
+  .container .first .grid {
+    display: block;
+  }
+  .container .first .grid-img {
+    height: 344px;
+    background-image: url("./assets/images/image-web-3-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container .first .grid-img img {
+    width: 100%;
+    height: 344px;
+  }
+  .container .first .grid-new {
+    grid-area: grid-new;
+    height: 500px;
+    padding: 2rem 1rem;
+    background-color: hsl(240deg, 100%, 5%);
+    color: hsl(36deg, 100%, 99%);
+  }
+  .container .first .grid-new h2 {
+    color: hsl(35deg, 77%, 62%);
+    font-size: 2rem;
+    font-weight: 800;
+    padding-bottom: 0;
+  }
+  .container .first .grid-new .div {
+    padding-top: 2rem;
+    font-weight: 800;
+    border-bottom: 1px solid hsl(236deg, 13%, 42%);
+  }
+  .container .first .grid-new .div h3 {
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  .container .first .grid-new .div h3 a {
+    color: hsl(36deg, 100%, 99%);
+  }
+  .container .first .grid-new .div h3 a:hover {
+    color: hsl(35deg, 77%, 62%);
+  }
+  .container .first .grid-new .div p {
+    padding-bottom: 2rem;
+    font-weight: 500;
+  }
+  .container .first .grid-new .div:last-child {
+    border-bottom: none;
+  }
+  .container .first .title {
+    font-size: 2.3rem;
+    width: 450px;
+    margin: 1.2rem 0;
+    line-height: 3.5rem;
+  }
+  .container .first .grid-btn {
+    font-size: 1.1rem;
+  }
+  .container .first .grid-btn .read {
+    background-color: hsl(5deg, 85%, 63%);
+    margin-bottom: 4rem;
+    border: none;
+  }
+  .container .second {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    padding: 5rem 0;
+  }
+  .container .second .one {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    width: 100%;
+  }
+  .container .second .one img {
+    height: 200px;
+  }
+  .container .second .one .text {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .second .one .text span {
+    font-size: 2rem;
+    color: hsl(233deg, 8%, 79%);
+    font-weight: 600;
+    padding-bottom: 1rem;
+  }
+  .container .second .one .text h3 {
+    font-weight: 800;
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+  .container .second .one .text a {
+    color: hsl(240deg, 100%, 5%);
+  }
+  .container .second .one .text a:hover {
+    color: hsl(5deg, 85%, 63%);
+  }
+  .container .second .one .text p {
+    color: hsl(236deg, 13%, 42%);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 230px;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */
